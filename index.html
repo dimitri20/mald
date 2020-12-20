@@ -8,14 +8,50 @@
 			margin: 0 auto;
 
 		}
+		div, body{
+			text-align: center;
+		}
+		div {
+			display: block;
+			margin: 0 auto;
+		}
+		.clicked{
+			display: block;
+		}
 	</style>
 </head>
 <body>
-	<h1 >
-		მალე მოდიიიი! <3 :D
-				 <p>&#128151;</p>
-	</h1>
+	<div>
+		<h1 >
+			მალე მოდიიიი! <3 :D
+					 <p>&#128151;</p>
+		</h1>
 
-	გთხოოოოოოოოოოოოოოოოოოოოოოოოვ
+		<p>გთხოოოოოოოოოოოოოოოოოოოოოოოოვ</p>		
+	</div>
+
+	<button onclick="clickme()">click me :)</button>
+
+	<div id="why" style="display: none; background-color: black;">
+		<img src="img.jpg">
+
+
+
+
+
+
+
+
+		<p style="margin-top: 500px; color: red;">მიყვარხარ </p>
+		
+	</div>
+
+
+
+	<script type="text/javascript">
+		function clickme(){
+			document.querySelector('#why').style.display = "block";
+		}
+	</script>
 </body>
 </html>
